@@ -9,13 +9,25 @@ public class Main {
         System.out.println(cliente.getEdad());
         System.out.println(cliente.getTelefono());
         System.out.println(cliente.getCredito());
+
+        Trabajador trabajador = new Trabajador();
+        trabajador.setNombre("Juan");
+        trabajador.setEdad(75);
+        trabajador.setTelefono(64178996);
+        trabajador.setSalario(600);
+        System.out.println(trabajador.getNombre());
+        System.out.println(trabajador.getEdad());
+        System.out.println(trabajador.getTelefono());
+        System.out.println(trabajador.getSalario());
+
+
     }
 }
 
 class Persona{
-    public int edad;
-    public String nombre;
-    public int telefono;
+    private int edad;
+    private String nombre;
+    private int telefono;
     public int getEdad() {
         return edad;
     }
